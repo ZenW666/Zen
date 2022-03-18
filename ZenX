@@ -67,6 +67,9 @@ end)
 Section:NewButton("Fly(X)", "pro fly", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/At5NK91R"))()
 end)
+Section:NewButton("AutoStomp", "1x1x1x1", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZenW666/autostomp/main/L"))()
+end)
 game.StarterGui:SetCore(
 	"SendNotification",
 	{
