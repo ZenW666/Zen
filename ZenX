@@ -2,10 +2,17 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Zen X", "BloodTheme")
 local Main = Window:NewTab("Main")
+local Esp = Window:NewTab("Esp")
 local Misc  = Window:NewTab("Misc")
 local KeyBind = Window:NewTab("KeyBind")
 local Others = Window:NewTab("Others")
 local Credit = Window:NewTab("Credit")
+
+--Esp
+local Section = Esp:NewSection("Esp")
+Section:NewButton("Esp", "hello", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/55y1LGTB'))()
+end)
 
 
 --Others
@@ -33,10 +40,13 @@ Section:NewKeybind("Keybind", "Im homophobic bitches", Enum.KeyCode.V, function(
 end)
 
 
--- player
+-- main
 local Section = Main:NewSection("Main")
 Section:NewButton("Aimlock (not mines)", "bro is trash and needs aimlock", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/coolmanstrongsuperman/lol/main/TheWare'))()
+end)
+Section:NewButton("Silent aim", "L kids", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/ZzKvXwAN'))()
 end)
 Section:NewButton("AntiStomp", "ppl cant make u go into a coma", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BlueaqeR/scripts-lol/main/Da%20Hood%20Anti%20Stomp%20(Optimized)"))()
